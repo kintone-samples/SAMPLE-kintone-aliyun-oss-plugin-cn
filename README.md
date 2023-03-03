@@ -9,7 +9,7 @@
 下载：
 
 ```bash
-git clone https://github.com/kintone-samples/kintone-aliyun-oss-plugin-cn.git
+git clone https://github.com/kintone-samples/SAMPLE-kintone-aliyun-oss-plugin-cn.git
 ```
 
 进入项目目录，在终端中运行
