@@ -1,0 +1,36 @@
+{
+  "name": "kintone_aliyun_oss",
+  "version": "0.1.0",
+  "scripts": {
+    "eslint": "eslint oss/js/src",
+    "build-oss-js": "webpack --config ./webpack-oss.config.js",
+    "build": "npm run build-oss-js",
+    "build_plugin": "kintone-plugin-packer oss --out build/oss.zip",
+    "build_plugin_again": "kintone-plugin-packer oss --out build/oss.zip --ppk build/oss.ppk",
+    "upload_plugin": "kintone-plugin-uploader build/oss.zip --base-url ${your doamin} --username ${your_name} --password ${your_password}"
+  },
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@cybozu/eslint-config": "9.0.1",
+    "@kintone/plugin-packer": "^3.0.2",
+    "@kintone/plugin-uploader": "^4.0.2",
+    "@kintone/rest-api-client": "1.1.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "copy-webpack-plugin": "5.1.1",
+    "css-loader": "3.4.2",
+    "eslint": "^5.16.0",
+    "spark-md5": "^3.0.1",
+    "style-loader": "1.1.3",
+    "sweetalert2": "9.10.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+}

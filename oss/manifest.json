@@ -1,0 +1,53 @@
+{
+  "manifest_version": 1,
+  "version": 1,
+  "type": "APP",
+  "name": {
+    "ja": "Aiyun OSS for Kintone",
+    "en": "Aiyun OSS for Kintone",
+    "zh": "Aiyun OSS for Kintone"
+  },
+  "description": {
+    "ja": "upload/download file form Aiyun OSS",
+    "en": "upload/download file form Aiyun OSS",
+    "zh": "通过Kintone向阿里云OSS上传或下载文件"
+  },
+  "icon": "icon/4.png",
+  "config": {
+    "html": "html/config.html",
+    "js": [
+      "js/jquery.min.js",
+      "js/kintone-config-helper.js",
+      "js/dist/config.min.js"
+    ],
+    "css": [
+      "css/config.css",
+      "css/51-modern-default.css"
+    ],
+    "required_params": [
+      "secretId",
+      "secretKey",
+      "role",
+      "bucket",
+      "region",
+      "directory",
+      "upload",
+      "fileList"
+    ]
+  },
+  "desktop": {
+    "js": [
+      "https://gosspublic.alicdn.com/aliyun-oss-sdk-6.17.1.min.js",
+      "js/jquery.min.js",
+      "js/kintone-ui-component.min.js",
+      "js/dist/desktop.min.js"
+    ],
+    "css": [
+      "css/desktop.css",
+      "css/kintone-ui-component.min.css"
+    ]
+  },
+  "mobile": {
+    "js": []
+  }
+}
